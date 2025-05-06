@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda Simulada</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="product">
+      <img src="imagenes/Tarjeta_Grafica_1.jpg" alt="Producto" class="product-image">
+      <h2>Tarjeta Gráfica Gamma Media ULTRA </h2>
+      <p>Afegeix les teves dades SI US PLAU.</p>
+      <div class="price">$1299.99</div>
+
+      <form id="purchase-form">
+        <input type="text" id="name" placeholder="Nombre completo" required />
+        <input type="email" id="email" placeholder="Correo electrónico" required />
+        <input type="text" id="address" placeholder="Dirección" required />
+        <input type="number" id="zipcode" placeholder="Código Postal" required pattern="[0-9]{5}" title="Debe ser un código postal válido (5 dígitos)" />
+        <input type="number" id="card" placeholder="Número de tarjeta" required />
+        <input type="number" id="expiry" placeholder="Fecha de expiración (MM/AA)" required />
+        <input type="number" id="cvv" placeholder="Código de seguridad (CVV)" required maxlength="3" />
+        <button type="submit">Confirmar Compra</button>
+      </form>
+
+      <div class="thank-you-message" id="thank-you-message">
+        ¡Gracias por tu compra! No fuiste estafado ni nada por el estilo. 😄
+      </div>
+
+      <!-- Aquí añadimos el enlace -->
+      <p><a href="tienda.html">Ir a la tienda</a></p>
+    </div>
+  </div>
+
+  <!-- Incluimos el archivo JS -->
+  <script src="script.js"></script>
+</body>
+</html>
